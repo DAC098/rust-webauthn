@@ -1,0 +1,16 @@
+[workspace]
+default-members = ["server"]
+members = [
+    "common",
+    "client",
+    "server"
+]
+
+[workspace.dependencies]
+common = { path = "./common" }
+env_logger = { version = "0.10" }
+log = { version = "0.4" }
+url = { version = "2" }
+uuid = { version = "1.6.1", features = ["v4"] }
+serde = { version = "1" }
+serde_json = { version = "1" }
